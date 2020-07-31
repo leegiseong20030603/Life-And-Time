@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bar"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="@font/mp"
+            android:text="지금동안 살아온 시간"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:maxLines="1"
+                android:maxLength="4"
+                android:id="@+id/put_Y_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/mp"
+                android:hint="년도"
+                android:inputType="number"
+                android:maxEms="4"
+                android:paddingLeft="10dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <EditText
+                android:maxLines="1"
+                android:maxLength="2"
+                android:id="@+id/put_M_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:layout_weight="1"
+                android:hint="월"
+                android:inputType="number"
+                android:maxEms="2"
+                android:paddingLeft="10dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <EditText
+                android:maxLines="1"
+                android:maxLength="2"
+                android:id="@+id/put_D_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:layout_weight="1"
+                android:hint="일"
+                android:inputType="number"
+                android:maxEms="2"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/result_button"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/mp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="#00000000"
+            android:text="결과" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/radiogroup">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:text="일"
+                android:id="@+id/D" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:text="시간"
+                android:id="@+id/H" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:text="분"
+                android:id="@+id/m" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/mp"
+                android:text="초"
+                android:id="@+id/S" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/mp"
+            android:gravity="center"
+            android:textSize="40dp" />
+
+        <com.google.android.gms.ads.AdView
+
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/adView"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+
+            android:layout_alignParentBottom="true"
+
+            ads:adSize="BANNER"
+
+            ads:adUnitId="@string/banner_ad_unit_id">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+</LinearLayout>
