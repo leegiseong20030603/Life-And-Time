@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">noyl</string>
-    <string name="admob_app_id">ca-app-pub-9388881581277099~6139340006</string>
-    <string name="banner_ad_unit_id">ca-app-pub-9388881581277099/5502412739</string>
+    <string name="admob_app_id">private</string>
+    <string name="banner_ad_unit_id">private</string>
 </resources>
